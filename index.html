@@ -1,0 +1,1281 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Growth Hacking & Dijital Pazarlama Rehberi</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<nav id="sidebar">
+  <div class="sidebar-header">
+    <span class="logo-mark">GH</span>
+    <span class="logo-sub">Growth Hacking Rehberi</span>
+  </div>
+  <ul class="nav-links">
+    <li><a href="#hero"          class="nav-item active" data-section="hero">01 — Giriş</a></li>
+    <li><a href="#growth-hacking" class="nav-item" data-section="growth-hacking">02 — Growth Hacking</a></li>
+    <li><a href="#growth-team"   class="nav-item sub" data-section="growth-team">↳ Growth Ekibi</a></li>
+    <li><a href="#dmmp"          class="nav-item" data-section="dmmp">03 — DMMP Framework</a></li>
+    <li><a href="#dmmp-process"  class="nav-item sub" data-section="dmmp-process">↳ 5 Süreç</a></li>
+    <li><a href="#metric-kpi"    class="nav-item sub" data-section="metric-kpi">↳ Metrik vs KPI</a></li>
+    <li><a href="#aarrr"         class="nav-item" data-section="aarrr">04 — AARRR Framework</a></li>
+    <li><a href="#acquisition"   class="nav-item sub" data-section="acquisition">↳ Acquisition</a></li>
+    <li><a href="#activation"    class="nav-item sub" data-section="activation">↳ Activation</a></li>
+    <li><a href="#revenue"       class="nav-item sub" data-section="revenue">↳ Revenue</a></li>
+    <li><a href="#retention"     class="nav-item sub" data-section="retention">↳ Retention</a></li>
+    <li><a href="#referral"      class="nav-item sub" data-section="referral">↳ Referral</a></li>
+    <li><a href="#cohort"        class="nav-item" data-section="cohort">05 — Cohort Analizi</a></li>
+    <li><a href="#metrics"       class="nav-item" data-section="metrics">06 — Temel Metrikler</a></li>
+    <li><a href="#ltv-cac"       class="nav-item sub" data-section="ltv-cac">↳ LTV / CAC</a></li>
+    <li><a href="#arpa-arpu"     class="nav-item sub" data-section="arpa-arpu">↳ ARPA / ARPU</a></li>
+    <li><a href="#churn"         class="nav-item sub" data-section="churn">↳ Churn & Retention</a></li>
+    <li><a href="#mrr-arr"       class="nav-item sub" data-section="mrr-arr">↳ MRR / ARR / NRR</a></li>
+    <li><a href="#references"    class="nav-item" data-section="references">07 — Kaynaklar</a></li>
+  </ul>
+  <div class="sidebar-footer"><span>v1.0 · 2025</span></div>
+</nav>
+
+<button id="hamburger" aria-label="Menüyü aç">
+  <span></span><span></span><span></span>
+</button>
+
+<main id="content">
+
+<!-- ═══════════════════════════════════════════════════
+     01  HERO
+════════════════════════════════════════════════════ -->
+<section id="hero" class="section hero-section">
+  <div class="hero-bg-grid"></div>
+  <div class="hero-inner">
+    <div class="badge">Büyüme Odaklı Pazarlama</div>
+    <h1 class="hero-title">
+      Growth Hacking &<br/>
+      <span class="gradient-text">Dijital Pazarlama</span>
+    </h1>
+    <p class="hero-sub">
+      Growth Hacking'in temellerinden AARRR ve DMMP framework'lerine, Cohort Analizi'nden
+      kritik büyüme metriklerine — veriyle büyüyen organizasyonlar için baştan sona kapsamlı rehber.
+    </p>
+    <div class="hero-stats">
+      <div class="stat-card"><span class="stat-num">2</span><span class="stat-label">Framework</span></div>
+      <div class="stat-card"><span class="stat-num">30+</span><span class="stat-label">Metrik &amp; Formül</span></div>
+      <div class="stat-card"><span class="stat-num">10+</span><span class="stat-label">İnteraktif Grafik</span></div>
+      <div class="stat-card"><span class="stat-num">8+</span><span class="stat-label">Gerçek Vaka</span></div>
+    </div>
+    <div class="hero-quote">
+      <blockquote>
+        "A growth hacker is a person whose true north is growth. Everything they do is scrutinized by its potential impact on scalable growth."
+        <cite>— Sean Ellis, Growth Hacking kavramının mucidi, 2010</cite>
+      </blockquote>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════
+     02  GROWTH HACKING
+════════════════════════════════════════════════════ -->
+<section id="growth-hacking" class="section">
+  <div class="section-inner">
+    <div class="section-label">Temel Kavram</div>
+    <h2 class="section-title">Growth Hacking Nedir?</h2>
+    <p class="section-desc">
+      2010 yılında Sean Ellis tarafından ortaya atılan "Growth Hacking" kavramı; ürünü büyütmeyi
+      tek odak noktası olarak benimseyen, veri analitiği, yaratıcılık ve teknolojiyi bir arada kullanan
+      pazarlama anlayışıdır. Geleneksel pazarlamadan temel farkı: bütçeden önce deneyi, maruziyetten önce
+      ölçümü, sezgiden önce veriyi koymasıdır.
+    </p>
+
+    <div class="info-box warning">
+      <strong>Önemli İstatistikler:</strong>
+      <ul>
+        <li>Şirketlerin <strong>%90'ında</strong> pazarlama başarısızlığının temel nedeni amacın net belirlenmemesidir. <em>(Martin Walsh, Digital Marketing Measurement Framework)</em></li>
+        <li>CEO'ların <strong>%40'ı</strong> pazarlama ekiplerinin gelir üzerindeki etkisini ölçmek istemektedir.</li>
+        <li>Şirketlerin <strong>%32'si</strong> analitik verilerin nasıl yorumlanacağını ve kullanılacağını bilmemektedir.</li>
+        <li>Organizasyonların <strong>%42'si</strong> mevcut ölçüm tekniklerinden memnun değildir.</li>
+      </ul>
+    </div>
+
+    <h3 class="sub-title">Growth Hacking vs. Geleneksel Pazarlama</h3>
+    <div class="compare-block">
+      <div class="compare-col">
+        <div class="compare-head traditional">Geleneksel Pazarlama</div>
+        <div class="compare-item">Büyük bütçe, kitlesel erişim</div>
+        <div class="compare-item">Marka bilinirliği odaklı</div>
+        <div class="compare-item">Uzun kampanya döngüleri</div>
+        <div class="compare-item">Sezgisel kararlar</div>
+        <div class="compare-item">Kanal seçimi sabit</div>
+        <div class="compare-item">ROI ölçümü güç</div>
+      </div>
+      <div class="compare-divider">VS</div>
+      <div class="compare-col">
+        <div class="compare-head growth">Growth Hacking</div>
+        <div class="compare-item highlight">Kısıtlı bütçe, maksimum büyüme</div>
+        <div class="compare-item highlight">Ölçülebilir büyüme odaklı</div>
+        <div class="compare-item highlight">Hızlı deney döngüleri (sprint)</div>
+        <div class="compare-item highlight">Veriye dayalı kararlar</div>
+        <div class="compare-item highlight">A/B test ile kanal optimizasyonu</div>
+        <div class="compare-item highlight">Her adımda ölçülebilir çıktı</div>
+      </div>
+    </div>
+
+    <h3 class="sub-title">Growth Hacking'in 3 Temel Bileşeni</h3>
+    <div class="grid-3">
+      <div class="card">
+        <div class="card-icon">📊</div>
+        <h4>Veri Analizi</h4>
+        <p>Her karar veri destekli olmalıdır. Hangi kanaldan gelen kullanıcı daha değerli? Hangi onboarding adımında kullanıcı düşüyor? Bu soruların cevabı analitik araçlardadır.</p>
+        <div class="metric-chip">Mixpanel · Amplitude · GA4</div>
+      </div>
+      <div class="card">
+        <div class="card-icon">🧪</div>
+        <h4>Deney Zihniyeti</h4>
+        <p>Her hipotez test edilmelidir. A/B testleri, multivariate testler ve split testler büyüme looplarını hızlandırır. Başarısız deney = öğrenme fırsatı.</p>
+        <div class="metric-chip">Optimizely · VWO · GrowthBook</div>
+      </div>
+      <div class="card">
+        <div class="card-icon">⚙️</div>
+        <h4>Teknik Uygulama</h4>
+        <p>Growth hacker teknik yeteneklere sahip olmalı ya da teknik ekiple yakın çalışmalıdır. Otomasyon, API entegrasyonları ve product analytics temeldir.</p>
+        <div class="metric-chip">Segment · Zapier · dbt</div>
+      </div>
+    </div>
+
+    <h3 class="sub-title">Growth Hacking Deney Döngüsü</h3>
+    <div class="experiment-cycle">
+      <div class="exp-step" style="--clr: var(--acq)">
+        <div class="exp-num">1</div>
+        <h4>Hipotez Geliştir</h4>
+        <p>Gözlem + veri + sezgi ile test edilebilir bir fikir üret. "X yaparsak Y değişkeni Z kadar artar" formatında.</p>
+      </div>
+      <div class="exp-arrow">→</div>
+      <div class="exp-step" style="--clr: var(--act)">
+        <div class="exp-num">2</div>
+        <h4>Test Tasarla</h4>
+        <p>Minimum geçerli test (MVT). Kontrol grubu ile deney grubunu belirle. Başarı metriğini önceden tanımla.</p>
+      </div>
+      <div class="exp-arrow">→</div>
+      <div class="exp-step" style="--clr: var(--rev)">
+        <div class="exp-num">3</div>
+        <h4>Çalıştır & Ölç</h4>
+        <p>İstatistiksel anlamlılık için yeterli örneklem büyüklüğü (%95 güven aralığı). Erken durma hatasından kaçın.</p>
+      </div>
+      <div class="exp-arrow">→</div>
+      <div class="exp-step" style="--clr: var(--ret)">
+        <div class="exp-num">4</div>
+        <h4>Analiz Et & Karar Ver</h4>
+        <p>Sonuçları yorumla: ölçeklendir, iterasyon yap ya da iptal et. Öğrenmeleri belgele.</p>
+      </div>
+      <div class="exp-arrow">→</div>
+      <div class="exp-step" style="--clr: var(--ref)">
+        <div class="exp-num">5</div>
+        <h4>Optimize Et</h4>
+        <p>Kazanan varyantı üretim ortamına taşı. Yeni hipotezler için döngüyü yeniden başlat.</p>
+      </div>
+    </div>
+
+    <div class="chart-card">
+      <h3>Growth Hacking Deney Hızı ve Büyüme İlişkisi</h3>
+      <p class="chart-desc">Haftalık deney sayısı arttıkça büyüme hızlanır. Airbnb, Booking.com ve Uber bu prensiple çalışır.</p>
+      <div class="chart-wrap">
+        <canvas id="experimentVelocityChart"></canvas>
+      </div>
+    </div>
+
+    <!-- GROWTH TEAM -->
+    <div id="growth-team">
+      <h3 class="sub-title">Growth Ekibi</h3>
+      <p class="section-desc" style="margin-bottom:24px">
+        Büyüme kendiliğinden olmaz. Ürün/market uyumu, doğru zamanlama, doğru araçlar, planlama,
+        test ve optimizasyon gerekir. Growth ekibi farklı departmanlardan insanları bir araya getirip
+        büyümeyi sistematik hale getirir. Bu ekibi farklı kılan şey <strong>"growth perspektifi"</strong>dir:
+        yalnızca iş yapmak için değil, yapılan işin büyümeye katkısını planlamak, ölçmek, test etmek
+        ve optimize etmek için var olurlar.
+      </p>
+
+      <div class="info-box">
+        <strong>Growth Ekibinin İlk Büyük Görevi: Planlama</strong><br/>
+        Hiçbir şey "hayırlısı olsun" diye beklenerek olmaz.
+        Önce <strong>amaç netleşecek</strong>, sonra <strong>hangi aksiyonların atılacağı belirlenecek</strong>,
+        en son <strong>hangi metriklerin izleneceği tanımlanacak</strong>. Bu sıra zorunludur.
+      </div>
+
+      <div class="grid-3" style="margin-top:28px">
+        <div class="card card-acq">
+          <h4>🎯 Her Zaman En İyiyi Hedefle</h4>
+          <p>"İyi yeterince iyi değildir." Growth ekibi mevcut durumu sürekli sorgulamalı, benchmark'ları aşmayı hedeflemelidir.</p>
+        </div>
+        <div class="card card-acq">
+          <h4>🌱 Organik Büyümeyi Hedefle</h4>
+          <p>Paid kanallar büyüme yaratmaz, büyümeyi hızlandırır. Gerçek büyüme ürünün değerinden, referraldan ve içerikten gelir.</p>
+        </div>
+        <div class="card card-acq">
+          <h4>🧠 Veri + Yorum + Aksiyon</h4>
+          <p>Veri tek başına kutsal değildir. Doğru yorum yapılmadan veri anlamsızdır; yorum aksiyon üretmeden değer yaratmaz.</p>
+        </div>
+        <div class="card card-acq">
+          <h4>🏆 Kazanmaya Odaklan</h4>
+          <p>Tüm deneylerin kazanmak zorunda olmadığını bil; ama her deneyde neyi ölçtüğünü ve neden yaptığını bil.</p>
+        </div>
+        <div class="card card-acq">
+          <h4>🔄 Büyüme Bitmez</h4>
+          <p>Büyüme tek seferlik bir proje değil, sürekli bir süreçtir. Pazar değişir, kullanıcı davranışı değişir, rakipler değişir.</p>
+        </div>
+        <div class="card card-acq">
+          <h4>📐 80/20 Kuralı</h4>
+          <p>Vaktinizin %80'ini mevcut özellikleri optimize etmek, %20'sini yeni özellikler eklemek için harcayın. Odak en büyük kaldıraçtır.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════
+     03  DMMP FRAMEWORK
+════════════════════════════════════════════════════ -->
+<section id="dmmp" class="section">
+  <div class="section-inner">
+    <div class="section-label">Framework · Avinash Kaushik</div>
+    <h2 class="section-title">DMMP — Digital Marketing Measurement Model</h2>
+    <p class="section-desc">
+      Avinash Kaushik tarafından geliştirilen DMMP, dijital pazarlama çalışmalarını iş hedefleriyle
+      ilişkilendiren ve doğru metriklerin seçilmesini sağlayan sistematik bir planlama modelidir.
+      Kaushik'e göre başarısızlığın en büyük nedenleri: kampanya amacının belirsizliği, stratejik
+      hareketlerin eksikliği ve gözlemlenecek KPI'ların yanlış tanımlanmasıdır.
+    </p>
+
+    <div class="three-dim-grid">
+      <div class="dim-card acq-dim">
+        <div class="dim-icon">📥</div>
+        <h4>Acquisition</h4>
+        <p>Trafiğinizi sağladığınız kaynakları özelleştirin, eforu ayarlayın, stratejiler üretin. Ödemeli ve organik kanallar.</p>
+      </div>
+      <div class="dim-card beh-dim">
+        <div class="dim-icon">🔍</div>
+        <h4>Behaviour</h4>
+        <p>Kullanıcıların sitenizdeki davranışları: en çok hangi sayfaları ziyaret ettiler, nerede çıktılar, ne kadar süre kaldılar?</p>
+      </div>
+      <div class="dim-card out-dim">
+        <div class="dim-icon">✅</div>
+        <h4>Outcomes</h4>
+        <p>Kullanıcıların davranışları hedeflerinizle örtüşüyor mu? Conversion, lead, satış, üyelik.</p>
+      </div>
+    </div>
+
+    <h3 class="sub-title">DMMP Neler Sunar?</h3>
+    <div class="benefits-list">
+      <div class="benefit-item"><span class="benefit-num">01</span><span>Kısıtlı bütçeyi daha etkin kullanmayı sağlar.</span></div>
+      <div class="benefit-item"><span class="benefit-num">02</span><span>Hesaplanabilir veriler elde etmenizi, kontrolü elinizde tutmanızı sağlar.</span></div>
+      <div class="benefit-item"><span class="benefit-num">03</span><span>Daha akılcı stratejiler üretmenizi sağlar.</span></div>
+      <div class="benefit-item"><span class="benefit-num">04</span><span>Yatırımlarınızın geri dönüşünü (ROI) daha sağlıklı ölçmenizi sağlar.</span></div>
+      <div class="benefit-item"><span class="benefit-num">05</span><span>Organizasyonun gelişimini olumsuz etkileyecek etkenleri önceden görmenizi sağlar.</span></div>
+      <div class="benefit-item"><span class="benefit-num">06</span><span>Kullanıcı deneyimini geliştirmenizi sağlar.</span></div>
+      <div class="benefit-item"><span class="benefit-num">07</span><span>Farklı kampanyaların ve kanalların verimliliğini ölçmenizi sağlar.</span></div>
+      <div class="benefit-item"><span class="benefit-num">08</span><span>Büyümeyi sürdürülebilir kılmanızı sağlar.</span></div>
+    </div>
+
+    <h3 class="sub-title">4 Kritik Başarısızlık Modu</h3>
+    <div class="pitfall-grid">
+      <div class="pitfall-card">
+        <div class="pitfall-icon">⚡</div>
+        <h4>Action without Data</h4>
+        <p>Koyacağınız hedefleri destekleyecek yeterli veriniz yoksa stratejik hamleleri hayata geçirme ve kabul ettirme noktasında ciddi sıkıntı yaşarsınız.</p>
+      </div>
+      <div class="pitfall-card">
+        <div class="pitfall-icon">📊</div>
+        <h4>Data without Insight</h4>
+        <p>Belirlediğiniz metrik ve KPI'ları zamanında yorumlamalısınız. Veri toplanıyor ama kimse yorumlamıyorsa stratejik değeri sıfırdır.</p>
+      </div>
+      <div class="pitfall-card">
+        <div class="pitfall-icon">🗺️</div>
+        <h4>Insight without Context</h4>
+        <p>Stratejik adımlarınız belli değilse hangi verinin sizin için önemli olduğunu nereden bilebilirsiniz? Önce işletmenin amaçlarını belirleyin.</p>
+      </div>
+      <div class="pitfall-card">
+        <div class="pitfall-icon">🚀</div>
+        <h4>Context without Action</h4>
+        <p>High-level amaçlar belirlendikten sonra bunları hayata geçirmek için atacağınız stratejik adımların kararlaştırılması şarttır.</p>
+      </div>
+    </div>
+
+    <!-- 5 SÜREÇ -->
+    <div id="dmmp-process">
+      <h3 class="sub-title">DMMP'nin 5 Süreci</h3>
+      <p style="color:var(--text2); font-size:15px; margin-bottom:32px;">
+        Oluşturulan yol haritası yalnızca pazarlama departmanı tarafından değil, ilişkili olan
+        tüm birimler tarafından benimsenmeli ve ciddiyetle yaklaşılmalıdır.
+      </p>
+
+      <div class="process-timeline">
+
+        <div class="process-step">
+          <div class="process-marker">1</div>
+          <div class="process-body">
+            <h4>Hedeflerin Belirlenmesi — Objectives</h4>
+            <p>High-level hedeflerin tanımlanması. "Bunu neden yapıyoruz?" sorusunun cevabı burada yatar.
+            Müşterilerle veya üst yönetimle konuşarak organizasyonun gerçek amacını ortaya çıkarın.</p>
+            <div class="dumb-grid">
+              <div class="dumb-item"><span class="dumb-letter">D</span><span><strong>Doable</strong> — Yapılabilir</span></div>
+              <div class="dumb-item"><span class="dumb-letter">U</span><span><strong>Understandable</strong> — Anlaşılır</span></div>
+              <div class="dumb-item"><span class="dumb-letter">M</span><span><strong>Manageable</strong> — Yönetilebilir</span></div>
+              <div class="dumb-item"><span class="dumb-letter">B</span><span><strong>Beneficial</strong> — Yararlı</span></div>
+            </div>
+            <div class="process-example">
+              <strong>Örnek:</strong> "Marka farkındalığını artırmak" → Farkındalık artırmak için web sitesini beslemek, online ve offline reklam yapmak.
+            </div>
+          </div>
+        </div>
+
+        <div class="process-step">
+          <div class="process-marker">2</div>
+          <div class="process-body">
+            <h4>Stratejik Faaliyetlerin Belirlenmesi — How</h4>
+            <p>Her high-level hedef için spesifik adımları kararlaştırın. Kullanıcı edinme ve kullanıcı
+            davranışı noktasında doğru soruları sorun. Sizinkine benzer kampanyaları analiz ederek
+            süreci hızlandırın ve öncelikleri belirleyin.</p>
+            <div class="process-example">
+              <strong>Örnek:</strong> Farkındalık → Web sitesi içeriği + Google Ads + Sosyal medya kampanyası + Influencer iş birliği
+            </div>
+          </div>
+        </div>
+
+        <div class="process-step">
+          <div class="process-marker">3</div>
+          <div class="process-body">
+            <h4>KPI'ların Belirlenmesi — Key Performance Indicators</h4>
+            <p>Başlangıçta belirlediğiniz hedeflerin ve stratejilerin neresinde olduğunuzu ölçümlemenizi
+            sağlar. Bu aşamada yanlış sayılara odaklanırsanız başarısızlık kaçınılmazdır.</p>
+            <div class="process-example">
+              <strong>Örnek:</strong> Farkındalık artırma → Web sitesi trafiği + Sosyal medya etkileşimi → KPI: Kazanılmış trafik, bağlılık oranı, paylaşım oranı, günlük ziyaret, iletişim formu dolduranlar
+            </div>
+            <div class="info-box" style="margin-top:16px">
+              <strong>Önemli:</strong> Kaushik, oluşturulan yol haritasının tüm birimler tarafından benimsenmesi
+              gerektiğini vurgular. Satın aldığınız kaynaklar, güçlü-zayıf yanlar ve fırsatlar bu süreçte
+              netlik kazanır.
+            </div>
+          </div>
+        </div>
+
+        <div class="process-step">
+          <div class="process-marker">4</div>
+          <div class="process-body">
+            <h4>Hedeflerin (Target) Belirlenmesi</h4>
+            <p>Başarı ve başarısızlığı ölçmek optimizasyon için zorunludur. Geçmiş verilere ya da
+            sektör benchmark'larına bakarak hedef belirleyin. Bu çeyreklik, aylık veya yıllık olabilir.</p>
+            <div class="info-box warning" style="margin-top:16px">
+              Başlangıçta hiç veriniz yoksa bile ulaşılabilir hedefler koyun ya da mevcut durumu
+              korumayı hedefleyerek başlayın — sonraki dönemde üstüne çıkarsınız. Hareketsizlik
+              hiçbir veri üretmez.
+            </div>
+            <div class="process-example">
+              <strong>Örnek:</strong> Conversion Rate = %2.3 (geçen çeyrek) → Hedef: %2.8 (bu çeyrek) → %3.5 (yıl sonu)
+            </div>
+          </div>
+        </div>
+
+        <div class="process-step">
+          <div class="process-marker">5</div>
+          <div class="process-body">
+            <h4>Segmentasyon — Hedef Kitle ve Çıktı Analizi</h4>
+            <p>Her strateji için odaklanmanız gereken segmentleri detaylı düşünün. Trafik kaynaklarını,
+            kullanıcı karakterlerini, davranışları ve beklentileri tanımlayın.
+            Segmentleri boyutları (dimension) gruplandırarak oluşturabilirsiniz.</p>
+            <div class="grid-2" style="margin-top:16px">
+              <div class="card" style="font-size:13px">
+                <h4 style="font-size:14px">Davranışsal Segmentasyon</h4>
+                <p>Sitede 1 dakikadan fazla zaman geçirenler · Belirli bir sayfayı ziyaret edenler · Sepete ekleyip çıkanlar</p>
+              </div>
+              <div class="card" style="font-size:13px">
+                <h4 style="font-size:14px">Demografik Segmentasyon</h4>
+                <p>İstanbul'dan siteye gelenler · 25-34 yaş aralığı · Belirli cihaz kullananlar · İlk kez ziyaretçiler</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div><!-- /process-timeline -->
+    </div><!-- /dmmp-process -->
+
+    <!-- METRİK vs KPI -->
+    <div id="metric-kpi">
+      <h3 class="sub-title">Metrik vs. KPI — Kritik Ayrım</h3>
+      <p style="color:var(--text2); font-size:15px; margin-bottom:28px;">
+        Bu ayrımı kavramak optimizasyon sürecini doğrudan etkiler. Yanlış sayılara odaklanmak
+        raporlarınızı anlamsız kılar ve ekibi yanlış yönlendirir.
+      </p>
+
+      <div class="metric-kpi-compare">
+        <div class="mk-col">
+          <div class="mk-head metric-head">Metrik</div>
+          <div class="mk-desc">Herhangi bir sayısal ölçüm. Bağlam gerekmez, tek başına bir anlam taşır.</div>
+          <div class="mk-examples">
+            <div class="mk-ex">Ziyaretçi Sayısı</div>
+            <div class="mk-ex">Bounce Rate</div>
+            <div class="mk-ex">Conversion Rate</div>
+            <div class="mk-ex">Sayfa Görüntüleme</div>
+            <div class="mk-ex">Oturum Süresi</div>
+          </div>
+        </div>
+        <div class="mk-arrow">→</div>
+        <div class="mk-col">
+          <div class="mk-head kpi-head">KPI</div>
+          <div class="mk-desc">Belirlenen stratejik hedefe bağlı, performansı ölçen seçilmiş metrik.</div>
+          <div class="mk-examples">
+            <div class="mk-ex kpi-ex">Organik Trafik (Farkındalık hedefi)</div>
+            <div class="mk-ex kpi-ex">Form Doldurma Oranı (Lead hedefi)</div>
+            <div class="mk-ex kpi-ex">Trial-to-Paid Oranı (Gelir hedefi)</div>
+            <div class="mk-ex kpi-ex">30. Gün Retention (Bağlılık hedefi)</div>
+            <div class="mk-ex kpi-ex">NPS (Tavsiye hedefi)</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="info-box success" style="margin-top:24px">
+        <strong>Örnek:</strong> Marka topluluğu yaratmak stratejik hedefinizse, <em>metrik</em> olarak toplam
+        takipçi sayısı kullanılabilir. Ancak <em>KPI</em>'ınız fan sayfasındaki etkileşim oranı (engagement rate)
+        olmalıdır — çünkü büyük takipçi sayısı cansız bir topluluğu gizleyebilir.
+      </div>
+
+      <div class="chart-card" style="margin-top:32px">
+        <h3>DMMP: İş Hedefinden KPI'ya Hiyerarşi</h3>
+        <div class="chart-wrap">
+          <canvas id="dmmpHierarchyChart"></canvas>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════
+     04  AARRR FRAMEWORK
+════════════════════════════════════════════════════ -->
+<section id="aarrr" class="section">
+  <div class="section-inner">
+    <div class="section-label">Framework · Dave McClure, 2007</div>
+    <h2 class="section-title">AARRR — Pirate Metrics</h2>
+    <p class="section-desc">
+      Dave McClure tarafından 2007 yılında "Startup Metrics for Pirates" sunumunda tanıtılan AARRR
+      modeli, ürün/market uyumunu ve müşteri yaşam döngüsünü 5 ana başlık altında analiz etmenizi sağlar.
+      Özellikle CEO'lar için karmaşık görünen süreçleri basite indirgemek ve dijital pazarlama ekibini
+      etkin yönetmek amacıyla güçlü bir araçtır.
+    </p>
+
+    <div class="funnel-container">
+      <div class="funnel-step acq">
+        <div class="funnel-label"><span class="funnel-letter">A</span><div><strong>Acquisition</strong><small>Edinme</small></div></div>
+        <div class="funnel-metric">Ziyaretçi → Lead</div>
+      </div>
+      <div class="funnel-step act">
+        <div class="funnel-label"><span class="funnel-letter">A</span><div><strong>Activation</strong><small>Etkileşim</small></div></div>
+        <div class="funnel-metric">Lead → Aktif Kullanıcı</div>
+      </div>
+      <div class="funnel-step rev">
+        <div class="funnel-label"><span class="funnel-letter">R</span><div><strong>Revenue</strong><small>Gelir</small></div></div>
+        <div class="funnel-metric">Aktif → Ödeme Yapan</div>
+      </div>
+      <div class="funnel-step ret">
+        <div class="funnel-label"><span class="funnel-letter">R</span><div><strong>Retention</strong><small>Bağlılık</small></div></div>
+        <div class="funnel-metric">Tekrar Kullanım</div>
+      </div>
+      <div class="funnel-step ref-step">
+        <div class="funnel-label"><span class="funnel-letter">R</span><div><strong>Referral</strong><small>Tavsiye</small></div></div>
+        <div class="funnel-metric">NPS → Yeni Kullanıcı</div>
+      </div>
+    </div>
+
+    <div class="info-box warning">
+      <strong>Organizasyonel Perspektif:</strong> Her bir AARRR adımında hipotez testleri geliştirilmeli ve
+      uygulanmalıdır. Farklı kanallar araştırılmalı, mail abonelik formlarında iyileştirmeler yapılmalı,
+      A/B testleriyle içerikler optimize edilmeli, sosyal medya kampanyaları ile yayılma hızlandırılmalı
+      ve geri bildirimlerden yola çıkarak ürüne küçük ama etkili dokunuşlar yapılmalıdır.
+    </div>
+
+    <div class="chart-card">
+      <h3>Tipik SaaS Funnel Dönüşüm Oranları</h3>
+      <p class="chart-desc">Her aşamadan bir sonrakine geçiş — sektör medyanı.</p>
+      <div class="chart-wrap"><canvas id="funnelChart"></canvas></div>
+    </div>
+  </div>
+</section>
+
+<!-- ACQUISITION -->
+<section id="acquisition" class="section">
+  <div class="section-inner">
+    <div class="section-label">AARRR — 1/5</div>
+    <h2 class="section-title">Acquisition <span class="badge-inline acq">Edinme</span></h2>
+    <p class="section-desc">
+      Ziyaretçilerin ürün ve hizmete ulaştığı kanalları bu başlık altında değerlendirmelisiniz.
+      Potansiyel müşterileriniz ürününüzü ilk olarak nereden duyuyor? Sosyal medya, arama motoru
+      reklamları, basılı yayın, bannerlar, blog yazıları, e-posta?
+    </p>
+
+    <div class="info-box">
+      <strong>Sık Yapılan Hata:</strong> Düşük trafik sağlayan kanalları elemek. Ancak bu yaklaşım
+      size dönüşüm veya tavsiye getiren bir dalı kesmenize neden olabilir. Trafik kanallarının
+      performansını <strong>tüm AARRR kriterleri</strong> üzerinden değerlendirdikten sonra karar verin.
+    </div>
+
+    <h3 class="sub-title">Kanal Verimliliğini Ölçmenin 3 Sorusu</h3>
+    <div class="grid-3">
+      <div class="card card-acq">
+        <div class="card-icon">📊</div>
+        <h4>Volume — Hacim</h4>
+        <p>En çok trafiği sağlayan kanallar hangileri? Ham ziyaretçi sayısı pazarlama aktivitesini gösterir ama tek başına yeterli değildir.</p>
+        <div class="metric-chip">Ölçüm: Sessions / Visits</div>
+      </div>
+      <div class="card card-acq">
+        <div class="card-icon">🔄</div>
+        <h4>Conversion Rate — Dönüşüm</h4>
+        <p>Bu kanallar arasında en iyi performans gösteren hangisi? Hangi kanaldan gelen ziyaretçi gerçekten dönüşüyor?</p>
+        <div class="metric-chip">Ölçüm: CVR = Dönüşüm / Ziyaretçi</div>
+      </div>
+      <div class="card card-acq">
+        <div class="card-icon">💰</div>
+        <h4>Cost — Maliyet</h4>
+        <p>Bütçemize en uygun olan ve fiyat/performans açısından hangi kanal avantajlıdır? CAC kanaldan kanala büyük değişir.</p>
+        <div class="metric-chip">Ölçüm: CAC = Harcama / Yeni Müşteri</div>
+      </div>
+    </div>
+
+    <h3 class="sub-title">Landed vs. Engaged — İki Kullanıcı Kategorisi</h3>
+    <div class="grid-2">
+      <div class="card">
+        <h4>🌐 Landed (Ulaşan)</h4>
+        <p>Siteye bir kez gelen ve Activation kriterlerini henüz tamamlamamış ziyaretçi. Trafik kanalından geldi, ilk izlenimle karşılaştı.</p>
+      </div>
+      <div class="card">
+        <h4>💡 Engaged (İlgili → Kazanılmış)</h4>
+        <p>Farklı zaman dilimlerinde ya da aynı oturumda birden fazla blog yazısı okuyan, birden fazla sayfa ziyaret eden kişi. Activation kriterlerini tamamladığında "kazanılmış" olur.</p>
+      </div>
+    </div>
+
+    <div class="chart-card">
+      <h3>Kanal Bazlı Ortalama CAC (USD)</h3>
+      <p class="chart-desc">B2B SaaS benchmark verisi — FirstPageSage 2024</p>
+      <div class="chart-wrap"><canvas id="cacChannelChart"></canvas></div>
+    </div>
+
+    <h3 class="sub-title">UTM Parametreleri ile Attribution</h3>
+    <div class="code-block">
+      <div class="code-label">UTM Parametreli URL Örneği</div>
+      <pre>https://app.ornekurun.com/signup
+  ?utm_source=google
+  &utm_medium=cpc
+  &utm_campaign=q2_2025_smb
+  &utm_content=hero_cta
+  &utm_term=growth+hacking+arac</pre>
+    </div>
+    <div class="info-box">
+      <strong>Attribution Modelleri:</strong> Last-click (yaygın ama yanıltıcı) · First-click · Linear · Time-Decay · Data-Driven.
+      B2B'de çok dokunuşlu (multi-touch) attribution kritiktir — satın alma kararı ortalama
+      <strong>7–13 temas noktası</strong> sonrasında verilir. <em>(Forrester B2B Buyer Journey Research)</em>
+    </div>
+  </div>
+</section>
+
+<!-- ACTIVATION -->
+<section id="activation" class="section">
+  <div class="section-inner">
+    <div class="section-label">AARRR — 2/5</div>
+    <h2 class="section-title">Activation <span class="badge-inline act">Etkileşim</span></h2>
+    <p class="section-desc">
+      Ürün/hizmetiniz için potansiyel müşterilerinizle ciddi biçimde ilk iletişime geçtiğiniz aşamadır.
+      Unutmayın: ziyaretçinin hem <strong>zamanını</strong>, hem <strong>dikkatini</strong>,
+      hem de <strong>parasını</strong> almak istiyorsunuz.
+    </p>
+
+    <div class="info-box">
+      <strong>Aktivasyon neden kritiktir?</strong> Yavaş yüklenen sayfa, karmaşık tasarım veya
+      kötü yönlendirmeler ziyaretçileri bu işlemleri tamamlamaktan alıkoyabilir ya da yarıda bırakmalarına
+      neden olabilir. McClure, ürüne eklenen her yeni özellik için etkileşim oranını yükseltmek adına
+      <strong>A/B testlerinin yapılmasını</strong> önerir.
+    </div>
+
+    <h3 class="sub-title">Activation Formülü</h3>
+    <div class="formula-block">
+      <div class="formula-title">Activation Rate</div>
+      <div class="formula">
+        <span class="f-term">Activation Rate</span>
+        <span class="f-op">=</span>
+        <span class="f-frac">
+          <span class="f-num">Aha! Moment'e Ulaşan Kullanıcı</span>
+          <span class="f-den">Toplam Kayıt Olan Kullanıcı</span>
+        </span>
+        <span class="f-op">×</span>
+        <span class="f-term">100</span>
+      </div>
+      <div class="formula-note">Örnek: 1.000 kayıt, 220 kişi Aha! Moment'e ulaştı → Activation Rate = %22</div>
+    </div>
+
+    <h3 class="sub-title">Ünlü "Aha! Moment" Örnekleri</h3>
+    <div class="aha-grid-full">
+      <div class="aha-item"><span class="aha-brand">Slack</span><span class="aha-desc">Bir ekibin 2.000 mesaj göndermesi → kalıcı müşteri</span></div>
+      <div class="aha-item"><span class="aha-brand">Facebook</span><span class="aha-desc">7 gün içinde 10 arkadaş eklemek</span></div>
+      <div class="aha-item"><span class="aha-brand">Twitter/X</span><span class="aha-desc">30 hesabı takip etmek</span></div>
+      <div class="aha-item"><span class="aha-brand">Dropbox</span><span class="aha-desc">İlk dosyayı yükleyip başka cihazda görmek</span></div>
+      <div class="aha-item"><span class="aha-brand">HubSpot</span><span class="aha-desc">İlk landing page'i oluşturup lead almak</span></div>
+      <div class="aha-item"><span class="aha-brand">Notion</span><span class="aha-desc">İlk workspace'i oluşturup paylaşmak</span></div>
+    </div>
+
+    <h3 class="sub-title">Gözlemlenecek Aktivasyon Metrikleri</h3>
+    <div class="metrics-row">
+      <div class="m-item"><div class="m-label">Sayfa Görüntüleme</div><div class="m-desc">İlk oturumda kaç sayfa görüldü?</div></div>
+      <div class="m-item"><div class="m-label">Sitede Geçen Süre</div><div class="m-desc">Ortalama oturum süresi (dakika)</div></div>
+      <div class="m-item"><div class="m-label">Bounce Rate</div><div class="m-desc">Tek sayfayı görüp çıkma oranı</div></div>
+      <div class="m-item"><div class="m-label">Goal Completion</div><div class="m-desc">Form doldurma, üyelik, demo talebi</div></div>
+      <div class="m-item"><div class="m-label">Time-to-Value</div><div class="m-desc">Kayıttan Aha! Moment'e geçen süre</div></div>
+    </div>
+
+    <div class="chart-card">
+      <h3>Onboarding Adım Sayısı vs. Aktivasyon Oranı</h3>
+      <div class="chart-wrap"><canvas id="activationChart"></canvas></div>
+    </div>
+  </div>
+</section>
+
+<!-- REVENUE -->
+<section id="revenue" class="section">
+  <div class="section-inner">
+    <div class="section-label">AARRR — 3/5</div>
+    <h2 class="section-title">Revenue <span class="badge-inline rev">Gelir</span></h2>
+    <p class="section-desc">
+      Neredeyse tüm girişimler için belki de en kritik aşama. Ancak Revenue'ya ulaşmak için
+      diğer 4 aşamayı doğru kurgulamak şarttır. Aceleci tavırlarla gelire odaklanmak mutsuz
+      müşterilere ve kısa sürede başarısızlığa yol açar.
+    </p>
+
+    <div class="info-box success">
+      <strong>En Önemli Gelir Metriği: Customer Lifetime Value (CLV/LTV)</strong><br/>
+      Müşterinizin hayatı boyunca sizin için yaratacağı değer, gelirlerinizi artırmak için
+      odaklanmanız gereken birincil metriktir. LTV düşükse hiçbir CAC sürdürülebilir olmaz.
+    </div>
+
+    <h3 class="sub-title">Temel Gelir Modelleri</h3>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>Model</th><th>Yapı</th><th>En İyi Senaryo</th><th>Kritik Metrik</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Freemium</strong></td><td>Ücretsiz temel + ücretli özellikler</td><td>Yüksek hacimli B2C / PLG SaaS</td><td>Free→Paid CVR (%2-5)</td></tr>
+          <tr><td><strong>Free Trial</strong></td><td>14-30 gün deneme, sonra ücretli</td><td>B2B SaaS, orta-karmaşık ürün</td><td>Trial Activation Rate</td></tr>
+          <tr><td><strong>Subscription</strong></td><td>Aylık / yıllık abonelik</td><td>Tüm SaaS modeller</td><td>MRR, Churn Rate</td></tr>
+          <tr><td><strong>Usage-Based</strong></td><td>Kullanıma göre ödeme</td><td>API, altyapı (Stripe, Twilio, AWS)</td><td>Usage Growth, NRR</td></tr>
+          <tr><td><strong>Enterprise / Contract</strong></td><td>Yıllık sözleşme, müzakere</td><td>Büyük B2B hesaplar</td><td>ACV, Logo Retention</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h3 class="sub-title">Geliri Artırmanın 4 Kolu</h3>
+    <div class="grid-2">
+      <div class="card card-rev">
+        <h4>📈 Yeni Müşteri Kazanımı</h4>
+        <p>Acquisition kanallarını optimize ederek daha düşük CAC ile daha fazla müşteri edinmek. En pahalı büyüme yolu ama temel gereklilik.</p>
+      </div>
+      <div class="card card-rev">
+        <h4>⬆️ Upsell / Expansion</h4>
+        <p>Mevcut müşteriyi üst pakete taşımak veya kullanım artışını sağlamak. CAC = 0. Net Revenue Retention'ı %100 üzerine taşımanın yolu.</p>
+      </div>
+      <div class="card card-rev">
+        <h4>🔁 Churn'ü Azaltmak</h4>
+        <p>Kaybettiğiniz müşterilerin gelirine değil, kazandığınız müşterilerin gelirine odaklanın. Retention'ı %5 artırmak kârı %25-95 artırır. <em>(Reichheld &amp; Sasser, HBR 1990)</em></p>
+      </div>
+      <div class="card card-rev">
+        <h4>💲 Fiyatlandırma Optimizasyonu</h4>
+        <p>Freemium, paket servisler, yıllık ödeme indirimi. Demo sürümlerini iyileştirmek ya da ücretsiz katman sunmak müşteri tabanını genişletir.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- RETENTION -->
+<section id="retention" class="section">
+  <div class="section-inner">
+    <div class="section-label">AARRR — 4/5</div>
+    <h2 class="section-title">Retention <span class="badge-inline ret">Bağlılık</span></h2>
+    <p class="section-desc">
+      Ürün/hizmetinizin türüne göre gözlemlediğiniz veriler ve zaman aralıkları değişebilir.
+      Kullanıcıların oyununuzu ne sıklıkla oynadığı, mobil uygulamanın ikinci kez ne zaman açıldığı,
+      e-ticaret sitesinde bir sonraki alışverişin ne zaman yapıldığı — bunların hepsi Retention'ın metriğidir.
+    </p>
+
+    <div class="formula-block">
+      <div class="formula-title">Retention Rate</div>
+      <div class="formula">
+        <span class="f-term">Retention Rate</span>
+        <span class="f-op">=</span>
+        <span class="f-frac">
+          <span class="f-num">(Dönem Sonu Müşteri − Dönem İçi Yeni Müşteri)</span>
+          <span class="f-den">Dönem Başı Müşteri</span>
+        </span>
+        <span class="f-op">×</span>
+        <span class="f-term">100</span>
+      </div>
+      <div class="formula-note">Churn Rate = 1 − Retention Rate · Örnek: 500 müşteri, 25 ayrıldı → Churn = %5 · Retention = %95</div>
+    </div>
+
+    <h3 class="sub-title">Retention Stratejileri</h3>
+    <div class="strategy-list">
+      <div class="strategy-item">
+        <div class="strategy-num">01</div>
+        <div class="strategy-content">
+          <h4>Kişiselleştirilmiş E-posta Kampanyaları</h4>
+          <p>Bir önceki adımda elde ettiğiniz mutlu ziyaretçilerin site içi davranışlarını, ziyaret
+          ettikleri sayfaları veya demografik özelliklerini analiz ederek e-posta planlamasını
+          iyileştirin. "Size özel %X indirim" gibi bağlılık e-postaları bu bağlamda en bilinen örnektir.
+          Bu örnekte gözlemlenmesi gereken KPI: <strong>Email Açılma Oranı</strong> ve
+          <strong>Tıklama Oranı (CTR)</strong>dır.</p>
+        </div>
+      </div>
+      <div class="strategy-item">
+        <div class="strategy-num">02</div>
+        <div class="strategy-content">
+          <h4>İçerik Pazarlaması ile Bağlılık</h4>
+          <p>Ürün/hizmetinizin faydalarını anlatan yazılar, videolar ve rehberlerle hem potansiyel
+          müşterilere seslenebilir hem mevcut müşterilerin sorunlarını çözebilirsiniz. İçerik, ödeme
+          yapılmadan da değer sunarak bağı güçlendirir.</p>
+        </div>
+      </div>
+      <div class="strategy-item">
+        <div class="strategy-num">03</div>
+        <div class="strategy-content">
+          <h4>Churn Sonrası Geri Bildirim</h4>
+          <p>Ürününüzü kullanmayı bırakan kişilerden anket yoluyla sebep alın. Bu geri bildirimler
+          ürün/market uyumuna ulaşmada en doğrudan ipuçlarını sağlar. Unutmayın:
+          <strong>önerdiğiniz faydaları müşteriye mutlaka vermelisiniz.</strong></p>
+        </div>
+      </div>
+      <div class="strategy-item">
+        <div class="strategy-num">04</div>
+        <div class="strategy-content">
+          <h4>Early Warning System — Sağlık Skoru</h4>
+          <p>Kullanım sıklığı, özellik kullanım derinliği, destek biletleri ve NPS skoru birleştirilerek
+          müşteri "sağlık skoru" oluşturulur. Skoru düşen müşterilere Customer Success ekibi proaktif
+          iletişim başlatır. Gainsight, Totango, ChurnZero bu amaçla kullanılır.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="chart-card">
+      <h3>Aylık Churn Oranının 36 Aylık Gelire Etkisi</h3>
+      <p class="chart-desc">Başlangıç: 1.000 müşteri, ARPA $100/ay. Farklı aylık churn senaryoları.</p>
+      <div class="chart-wrap"><canvas id="churnImpactChart"></canvas></div>
+    </div>
+  </div>
+</section>
+
+<!-- REFERRAL -->
+<section id="referral" class="section">
+  <div class="section-inner">
+    <div class="section-label">AARRR — 5/5</div>
+    <h2 class="section-title">Referral <span class="badge-inline ref-badge">Tavsiye</span></h2>
+    <p class="section-desc">
+      Word-of-mouth (ağızdan ağıza pazarlama) hiçbir zaman etkisini yitirmedi. Ürün/hizmetinizden
+      yararlanan kişilerin çevrelerine ileteceği olumlu fikirler büyümeyi hızlandırır.
+      Tüketicilerin <strong>%84'ü</strong> bir ürünle ilgili aile ve arkadaşlarından gelen önerilere
+      çoğunlukla ya da tamamen güvendiklerini belirtiyor. <em>(Nielsen Global Trust in Advertising)</em>
+    </p>
+
+    <div class="formula-block">
+      <div class="formula-title">K-Factor — Viral Katsayısı</div>
+      <div class="formula">
+        <span class="f-term">K</span>
+        <span class="f-op">=</span>
+        <span class="f-term cyan">i</span>
+        <span class="f-op">×</span>
+        <span class="f-term yellow">c</span>
+      </div>
+      <div class="formula-note">
+        i = her mevcut müşteri tarafından gönderilen toplam davet/tavsiye sayısı<br/>
+        c = her bir davetin dönüşüm oranı (yeni kullanıcıya dönüşme yüzdesi)<br/>
+        K &gt; 1 → viral büyüme · K = 0.5 → her 2 kullanıcı 1 yeni kullanıcı getirir
+      </div>
+    </div>
+
+    <div class="grid-2">
+      <div class="case-card">
+        <div class="case-header">
+          <span class="case-company">Dropbox</span>
+          <span class="case-type">Referral Program</span>
+          <span class="case-result positive">+3.900% Büyüme</span>
+        </div>
+        <div class="case-body">
+          <p>Arkadaşını davet eden kişilere ücretsiz ekstra depolama alanı (500 MB) verdi.
+          Bu tek uygulama ile kullanıcı tabanını 100.000'den 4 milyona 15 ayda taşıdı.
+          Aylık yeni kayıtların <strong>%35'i</strong> referral programından geliyordu.</p>
+          <div class="case-metrics"><span>K ≈ 1.4</span><span>CAC ≈ $0</span></div>
+        </div>
+      </div>
+      <div class="case-card">
+        <div class="case-header">
+          <span class="case-company">YouTube</span>
+          <span class="case-type">Ürün İçi Virality</span>
+          <span class="case-result positive">Milyarlarca Embed</span>
+        </div>
+        <div class="case-body">
+          <p>Web site yöneticileri için devrimsel bir yenilik: videolara embed edilebilme özelliği.
+          Böylece milyonlarca sitede YouTube player ile videolar yayınlandı — ürünün kendisi
+          büyüme kanalına dönüştü.</p>
+          <div class="case-metrics"><span>Inherent Virality</span><span>Sıfır Maliyet</span></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- SaaS Example -->
+    <div class="saas-example">
+      <h3>SaaS için Uçtan Uca AARRR Örneği</h3>
+      <div class="saas-flow">
+        <div class="sf-step acq"><div class="sf-label">Acquisition</div><div class="sf-desc">AdWords reklamıyla siteye gelen ziyaretçi</div></div>
+        <div class="sf-arrow">↓</div>
+        <div class="sf-step act"><div class="sf-label">Activation</div><div class="sf-desc">Ürün kaydını tamamlaması ve ilk formunu oluşturması</div></div>
+        <div class="sf-arrow">↓</div>
+        <div class="sf-step rev"><div class="sf-label">Revenue</div><div class="sf-desc">İhtiyaçların artması → Pro paketi satın alması</div></div>
+        <div class="sf-arrow">↓</div>
+        <div class="sf-step ret"><div class="sf-label">Retention</div><div class="sf-desc">Tüm belgelerini platforma aktarması ve form oluşturmaya devam etmesi</div></div>
+        <div class="sf-arrow">↓</div>
+        <div class="sf-step ref-sf"><div class="sf-label">Referral</div><div class="sf-desc">Dosya paylaşımlarını platform linki üzerinden yapması, arkadaşlarına tavsiye etmesi</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════
+     05  COHORT ANALİZİ
+════════════════════════════════════════════════════ -->
+<section id="cohort" class="section">
+  <div class="section-inner">
+    <div class="section-label">Analiz Tekniği</div>
+    <h2 class="section-title">Cohort Analizi</h2>
+    <p class="section-desc">
+      AARRR'ı uygulamaya karar verdiniz. A/B testleri uygulayabilir, analitik araçlardan çeşitli
+      raporlar çekebilirsiniz. Ancak bunlar her zaman yeterli olmayacak. Daha karmaşık test
+      süreçlerinde, üründe yapılan değişikliklerde veya dönemsel kampanyalarda analitik verileri
+      organizasyonel süreçlere entegre ederken kullanacağınız en önemli tekniklerden biri
+      <strong>Cohort Analizi</strong>dir.
+    </p>
+
+    <div class="cohort-definition">
+      <div class="cd-icon">📅</div>
+      <div class="cd-text">
+        <h3>Cohort Analizi Nedir?</h3>
+        <p>Ürün/hizmetinizle etkileşime geçen kişilerin <strong>belirli bir zaman dilimi içindeki</strong>
+        davranışlarını, ortak özelliklerini gözlemlemenizi ve kıyaslama yapmanızı sağlayan analiz türüdür.</p>
+        <div class="info-box" style="margin-top:16px">
+          <strong>"Segmentasyondan ne farkı var?"</strong> — Farkı <strong>zaman boyutu</strong>dur.
+          Segmentasyon anlık bir kesit sunar; Cohort Analizi aynı grubun zaman içindeki
+          davranış değişimini izler. Bu özelliği özellikle AARRR modelinde
+          <strong>Retention</strong> ölçümlemesini son derece güçlü kılar.
+        </div>
+      </div>
+    </div>
+
+    <h3 class="sub-title">Cohort Analizi ile Neler Yapabilirsiniz?</h3>
+    <div class="cohort-benefits">
+      <div class="cb-item"><div class="cb-num">1</div><p>Belirlediğiniz zaman aralığında kullanıcıların ortak özelliklerini görürsünüz.</p></div>
+      <div class="cb-item"><div class="cb-num">2</div><p>AARRR modelini daha verimli kullanır ve gerçekçi veriler elde edersiniz.</p></div>
+      <div class="cb-item"><div class="cb-num">3</div><p>Segmentasyon sayesinde müşteri davranışlarını daha rahat gözlemlersiniz.</p></div>
+      <div class="cb-item"><div class="cb-num">4</div><p>Dönemsel kampanyalarınızı daha etkin yönetirsiniz.</p></div>
+      <div class="cb-item"><div class="cb-num">5</div><p>Mevcut verilerinizi etkin biçimde kıyaslayabilirsiniz.</p></div>
+    </div>
+
+    <h3 class="sub-title">Cohort Türleri</h3>
+    <div class="grid-2">
+      <div class="card">
+        <h4>📅 Acquisition Cohort (Zaman Bazlı)</h4>
+        <p>Kullanıcılar sisteme katıldıkları tarihe göre gruplandırılır. "Ocak'ta kaydolan kullanıcılar 3. ayda hâlâ aktif mi?" sorusunu yanıtlar. En yaygın kullanılan cohort türüdür.</p>
+        <div class="metric-chip">Retention ölçümü için standart</div>
+      </div>
+      <div class="card">
+        <h4>⚡ Behavioral Cohort (Davranış Bazlı)</h4>
+        <p>Kullanıcılar belirli bir aksiyonu gerçekleştirip gerçekleştirmemelerine göre gruplandırılır. "Ürün turunu tamamlayanlar vs. tamamlamayanlar 30 günlük retention farkı nedir?"</p>
+        <div class="metric-chip">A/B test entegrasyonu için güçlü</div>
+      </div>
+    </div>
+
+    <h3 class="sub-title">Cohort Tablosunu Nasıl Okuruz?</h3>
+    <p style="color:var(--text2); font-size:14px; margin-bottom:16px;">
+      Her satır bir cohort'tur (kayıt dönemi). Sütunlar o cohort'un ilerleyen aylardaki retention oranını gösterir.
+      Köşegen boyunca okumak aynı "yaştaki" cohort'ları karşılaştırır — buradaki iyileşme ürün kalitesinin arttığını gösterir.
+    </p>
+    <div class="cohort-table-wrap">
+      <table class="cohort-table">
+        <thead>
+          <tr>
+            <th>Cohort</th><th>Ay 0</th><th>Ay 1</th><th>Ay 2</th><th>Ay 3</th><th>Ay 4</th><th>Ay 5</th><th>Ay 6</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td class="cohort-label">Oca 2024</td><td class="c100">%100</td><td class="c55">%55</td><td class="c42">%42</td><td class="c35">%35</td><td class="c30">%30</td><td class="c27">%27</td><td class="c25">%25</td></tr>
+          <tr><td class="cohort-label">Şub 2024</td><td class="c100">%100</td><td class="c58">%58</td><td class="c45">%45</td><td class="c38">%38</td><td class="c33">%33</td><td class="c30">%30</td><td class="c-na">—</td></tr>
+          <tr><td class="cohort-label">Mar 2024</td><td class="c100">%100</td><td class="c62">%62</td><td class="c49">%49</td><td class="c42">%42</td><td class="c37">%37</td><td class="c-na">—</td><td class="c-na">—</td></tr>
+          <tr><td class="cohort-label">Nis 2024</td><td class="c100">%100</td><td class="c65">%65</td><td class="c52">%52</td><td class="c45">%45</td><td class="c-na">—</td><td class="c-na">—</td><td class="c-na">—</td></tr>
+          <tr><td class="cohort-label">May 2024</td><td class="c100">%100</td><td class="c68">%68</td><td class="c55">%55</td><td class="c-na">—</td><td class="c-na">—</td><td class="c-na">—</td><td class="c-na">—</td></tr>
+          <tr><td class="cohort-label">Haz 2024</td><td class="c100">%100</td><td class="c71">%71</td><td class="c-na">—</td><td class="c-na">—</td><td class="c-na">—</td><td class="c-na">—</td><td class="c-na">—</td></tr>
+        </tbody>
+      </table>
+      <p class="chart-source">↑ Ay 1 retention'ının %55→%71'e çıkması: ürün iyileştirmelerinin etkisi. Köşegen karşılaştırması bu ilerlemeyi gösterir.</p>
+    </div>
+
+    <div class="chart-card">
+      <h3>Cohort Retention Eğrileri</h3>
+      <p class="chart-desc">Her cohort döneminin aylık retention performansı — düz çizgi = iyileşme, aşağı eğim = churn artışı.</p>
+      <div class="chart-wrap"><canvas id="cohortRetentionChart"></canvas></div>
+    </div>
+
+    <h3 class="sub-title">Cohort Analizini Nasıl Uygularsınız?</h3>
+    <div class="strategy-list">
+      <div class="strategy-item">
+        <div class="strategy-num">01</div>
+        <div class="strategy-content">
+          <h4>Cohort'u Tanımlayın</h4>
+          <p>Hangi zaman birimini kullanacaksınız? Haftalık mı, aylık mı? Hangi olay tetikleyici olacak?
+          (Kayıt tarihi, ilk satın alma, ilk özellik kullanımı). Bu kararı iş hedefinize göre verin.</p>
+        </div>
+      </div>
+      <div class="strategy-item">
+        <div class="strategy-num">02</div>
+        <div class="strategy-content">
+          <h4>Takip Metriğini Seçin</h4>
+          <p>Retention için genellikle "aktif kullanıcı oranı" veya "tekrar satın alma oranı" kullanılır.
+          Ancak ürününüze özgü bir "bağlılık aksiyonu" tanımlayabilirsiniz: belgeyi düzenleme,
+          mesaj gönderme, özelliği kullanma gibi.</p>
+        </div>
+      </div>
+      <div class="strategy-item">
+        <div class="strategy-num">03</div>
+        <div class="strategy-content">
+          <h4>Anomalileri İnceleyin</h4>
+          <p>Hangi cohort beklenenden daha hızlı düşüyor? Hangi ay bir iyileşme yaşandı?
+          Bu anomaliler ürün kararlarını, kampanya etkilerini veya onboarding değişikliklerini
+          işaret ediyor olabilir.</p>
+        </div>
+      </div>
+      <div class="strategy-item">
+        <div class="strategy-num">04</div>
+        <div class="strategy-content">
+          <h4>AARRR ile Entegre Edin</h4>
+          <p>Acquisition cohort'u hangi kanaldan edinildiğiyle çaprazlayın: "Organic SEO'dan gelen
+          cohort mu, paid social'dan gelen cohort mu daha iyi retention gösteriyor?" Bu analiz
+          kanal bütçe dağılımınızı doğrudan etkiler.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════
+     06  TEMEL METRİKLER
+════════════════════════════════════════════════════ -->
+<section id="metrics" class="section">
+  <div class="section-inner">
+    <div class="section-label">Metrik Rehberi</div>
+    <h2 class="section-title">Temel Metrikler &amp; Hesaplama Rehberi</h2>
+    <p class="section-desc">
+      Growth çalışmalarında metrikleri yanlış hesaplamak ya da yanlış yorumlamak, yanlış kararların
+      temel nedenidir. Bu bölümde her metriğin formülü, nasıl hesaplandığı ve karar almada nasıl
+      kullanıldığı eksiksiz açıklanmaktadır.
+    </p>
+
+    <!-- LTV / CAC -->
+    <div id="ltv-cac">
+      <h3 class="sub-title">LTV / CAC — Büyümenin Altın Oranı</h3>
+
+      <div class="grid-2">
+        <div class="formula-card green">
+          <div class="formula-card-title">Customer Lifetime Value (LTV / CLV)</div>
+          <div class="big-formula">
+            LTV = ARPU × <span class="frac"><span class="num">Gross Margin</span><span class="den">Churn Rate</span></span>
+          </div>
+          <div class="formula-alt">Basit form: LTV = ARPU × (1 / Churn Rate)</div>
+          <div class="formula-example">
+            Örnek: ARPU $60, Gross Margin %80, Aylık Churn %4<br/>
+            LTV = $60 × (0.80 / 0.04) = $60 × 20 = <strong>$1.200</strong>
+          </div>
+        </div>
+        <div class="formula-card blue">
+          <div class="formula-card-title">Customer Acquisition Cost (CAC)</div>
+          <div class="big-formula">
+            CAC = <span class="frac"><span class="num">Toplam Satış + Pazarlama Gideri</span><span class="den">Edinilen Yeni Müşteri Sayısı</span></span>
+          </div>
+          <div class="formula-example">
+            Örnek: Aylık $12.000 S&amp;M harcaması, 80 yeni müşteri<br/>
+            CAC = $12.000 / 80 = <strong>$150</strong>
+          </div>
+        </div>
+      </div>
+
+      <div class="ltv-cac-ratio">
+        <h3>LTV:CAC Oranı Yorumlama Rehberi</h3>
+        <div class="ratio-bar">
+          <div class="ratio-zone danger"><span class="ratio-val">&lt;1:1</span><span>Tehlikeli</span></div>
+          <div class="ratio-zone warning"><span class="ratio-val">1–3:1</span><span>Optimize Et</span></div>
+          <div class="ratio-zone good"><span class="ratio-val">3:1</span><span>Hedef Standart</span></div>
+          <div class="ratio-zone excellent"><span class="ratio-val">5:1+</span><span>Mükemmel</span></div>
+          <div class="ratio-zone warning"><span class="ratio-val">&gt;10:1</span><span>Yatırım Yapılmıyor</span></div>
+        </div>
+      </div>
+
+      <div class="formula-block" style="margin-top:24px">
+        <div class="formula-title">CAC Payback Period (Geri Kazanım Süresi)</div>
+        <div class="formula">
+          <span class="f-term">Payback</span>
+          <span class="f-op">=</span>
+          <span class="f-frac">
+            <span class="f-num">CAC</span>
+            <span class="f-den">ARPA × Gross Margin</span>
+          </span>
+          <span class="f-op">(ay)</span>
+        </div>
+        <div class="formula-note">Hedef: B2B SaaS &lt;12 ay · B2C &lt;6 ay · PLG &lt;3 ay<br/>Örnek: CAC $150, ARPA $60, GM %80 → Payback = 150 / (60 × 0.80) = <strong>3.1 ay</strong></div>
+      </div>
+
+      <div class="chart-card">
+        <h3>LTV:CAC Oranının Büyüme Kapasitesine Etkisi</h3>
+        <div class="chart-wrap"><canvas id="ltvCacChart"></canvas></div>
+      </div>
+    </div>
+
+    <!-- ARPA / ARPU -->
+    <div id="arpa-arpu">
+      <h3 class="sub-title">ARPA / ARPU — Gelir Verimliliği</h3>
+      <div class="grid-2">
+        <div class="formula-card blue">
+          <div class="formula-card-title">ARPU — Average Revenue Per User</div>
+          <div class="big-formula">
+            ARPU = <span class="frac"><span class="num">Toplam MRR</span><span class="den">Tüm Aktif Kullanıcılar</span></span>
+          </div>
+          <div class="formula-example">B2C ve freemium modellerde kullanılır. Spotify, Netflix bu metriği raporlar.<br/>Örnek: MRR $50.000, 10.000 kullanıcı → ARPU = <strong>$5/ay</strong></div>
+        </div>
+        <div class="formula-card green">
+          <div class="formula-card-title">ARPA — Average Revenue Per Account</div>
+          <div class="big-formula">
+            ARPA = <span class="frac"><span class="num">Toplam MRR</span><span class="den">Ödeme Yapan Hesap Sayısı</span></span>
+          </div>
+          <div class="formula-example">B2B SaaS standardı. Hesap = şirket (birden fazla kullanıcı içerebilir).<br/>Örnek: MRR $50.000, 200 hesap → ARPA = <strong>$250/ay</strong></div>
+        </div>
+      </div>
+      <div class="info-box" style="margin-top:20px">
+        <strong>ARPA Büyütme Yolları:</strong>
+        <ul>
+          <li><strong>Upsell:</strong> Mevcut müşteriyi üst pakete taşımak (en kısa &amp; en ucuz yol)</li>
+          <li><strong>Cross-sell:</strong> Ek modül veya tamamlayıcı ürün satmak</li>
+          <li><strong>Seat expansion:</strong> B2B'de kullanıcı sayısını artırmak (PLG'de organik olur)</li>
+          <li><strong>Usage expansion:</strong> Kullanım tabanlı modelde daha fazla tüketimi teşvik etmek</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- CHURN & RETENTION -->
+    <div id="churn">
+      <h3 class="sub-title">Churn Rate &amp; Retention Rate</h3>
+      <div class="grid-2">
+        <div class="formula-card red">
+          <div class="formula-card-title">Monthly Churn Rate</div>
+          <div class="big-formula">
+            Churn = <span class="frac"><span class="num">Kaybedilen Müşteri</span><span class="den">Dönem Başı Müşteri</span></span> × 100
+          </div>
+          <div class="formula-example">Örnek: 500 müşteri, 20 iptal → Aylık Churn = %4</div>
+        </div>
+        <div class="formula-card green">
+          <div class="formula-card-title">Net Revenue Retention (NRR)</div>
+          <div class="big-formula">
+            NRR = <span class="frac"><span class="num">MRR + Expansion − Contraction − Churn</span><span class="den">Başlangıç MRR</span></span> × 100
+          </div>
+          <div class="formula-example">NRR &gt;100% = müşteri kaybına rağmen gelir büyüyor<br/>Örnek: Başlangıç $100k, Expansion $20k, Churn $10k → NRR = <strong>%110</strong></div>
+        </div>
+      </div>
+      <div class="info-box warning" style="margin-top:20px">
+        <strong>Aylık → Yıllık Churn Dönüşümü:</strong><br/>
+        Aylık %2 churn → Yıllık churn = 1 − (1 − 0.02)¹² = <strong>%21.5</strong><br/>
+        Aylık %5 churn → Yıllık churn = 1 − (1 − 0.05)¹² = <strong>%46</strong><br/>
+        Bu hesaplama, aylık rakamların yıllık etkisini çoğu yöneticinin sandığından çok daha büyük kılar.
+      </div>
+      <div class="chart-card">
+        <h3>Sektöre Göre Kabul Edilebilir Yıllık Churn Benchmark</h3>
+        <div class="chart-wrap short"><canvas id="churnBenchmarkChart"></canvas></div>
+        <p class="chart-source">SaaS Capital Annual Benchmark Survey, 2024</p>
+      </div>
+    </div>
+
+    <!-- MRR / ARR / NRR -->
+    <div id="mrr-arr">
+      <h3 class="sub-title">MRR / ARR / NRR — SaaS'ın Can Damarı</h3>
+      <div class="saas-metrics-grid">
+        <div class="saas-metric">
+          <div class="sm-label">MRR</div>
+          <div class="sm-desc">Monthly Recurring Revenue</div>
+          <div class="sm-formula">Aktif Abonelikler × ARPA</div>
+        </div>
+        <div class="saas-metric">
+          <div class="sm-label">ARR</div>
+          <div class="sm-desc">Annual Recurring Revenue</div>
+          <div class="sm-formula">MRR × 12</div>
+        </div>
+        <div class="saas-metric">
+          <div class="sm-label">New MRR</div>
+          <div class="sm-desc">Yeni müşterilerden gelen</div>
+          <div class="sm-formula">Yeni Müşteriler × ARPA</div>
+        </div>
+        <div class="saas-metric">
+          <div class="sm-label">Expansion MRR</div>
+          <div class="sm-desc">Upsell + Cross-sell</div>
+          <div class="sm-formula">Mevcut Müşteri ARPA Artışı</div>
+        </div>
+        <div class="saas-metric">
+          <div class="sm-label">Quick Ratio</div>
+          <div class="sm-desc">Büyüme kalite skoru</div>
+          <div class="sm-formula">(Yeni+Expansion) / (Churn+Contraction)</div>
+        </div>
+        <div class="saas-metric">
+          <div class="sm-label">Rule of 40</div>
+          <div class="sm-desc">Büyüme + Kârlılık dengesi</div>
+          <div class="sm-formula">ARR Büyümesi% + EBITDA Marjı% ≥ 40</div>
+        </div>
+      </div>
+
+      <div class="info-box success" style="margin-top:24px">
+        <strong>Magic Number — Satış Verimliliği:</strong>
+        <div class="formula-inline" style="margin-top:8px">Magic Number = Net New ARR / Önceki Çeyrek S&amp;M Harcaması</div>
+        <p style="margin-top:8px; font-size:13px;">
+          &gt;0.75 → verimli büyüme · &gt;1.0 → mükemmel verimlilik · &lt;0.5 → pazarlama harcaması gözden geçirilmeli.<br/>
+          Örnek: Q2 Net New ARR $400K, Q1 S&amp;M $300K → Magic Number = <strong>1.33</strong> (mükemmel)
+        </p>
+      </div>
+
+      <div class="chart-card">
+        <h3>MRR Bileşen Analizi</h3>
+        <p class="chart-desc">Sağlıklı büyümede Expansion MRR, Churn MRR'ı aşmalıdır.</p>
+        <div class="chart-wrap"><canvas id="mrrBreakdownChart"></canvas></div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════
+     07  KAYNAKLAR
+════════════════════════════════════════════════════ -->
+<section id="references" class="section">
+  <div class="section-inner">
+    <div class="section-label">Kaynaklar</div>
+    <h2 class="section-title">Bilimsel Referanslar &amp; Temel Kaynaklar</h2>
+
+    <div class="references-grid">
+      <div class="ref-category">
+        <h3>📚 Akademik Makaleler</h3>
+        <ul class="ref-list">
+          <li>
+            Reichheld, F. F., &amp; Sasser, W. E. (1990). <em>Zero Defections: Quality Comes to Services.</em>
+            Harvard Business Review, 68(5), 105-111.
+            <span class="ref-note">Retention oranının %5 artışının kârı %25-95 artırdığını kanıtlayan dönüm noktası çalışma. Modern müşteri elde tutma stratejilerinin temel referansı.</span>
+          </li>
+          <li>
+            Fader, P. S., Hardie, B. G., &amp; Lee, K. L. (2005). <em>"Counting Your Customers" the Easy Way: An Alternative to the Pareto/NBD Model.</em> Marketing Science, 24(2), 275-284.
+            <span class="ref-note">BG/NBD modeli: müşteri yaşam boyu tahmin etmenin akademik standardı. LTV hesaplamalarına teorik zemin sağlar.</span>
+          </li>
+          <li>
+            Gupta, S., Lehmann, D. R., &amp; Stuart, J. A. (2004). <em>Valuing Customers.</em> Journal of Marketing Research, 41(1), 7-18.
+            <span class="ref-note">LTV ile şirket değeri arasındaki ilişkiyi matematiksel olarak kuran çalışma. Finans ve pazarlamanın kesişim noktası.</span>
+          </li>
+          <li>
+            Kumar, V., &amp; Reinartz, W. (2006). <em>Customer Relationship Management: A Databased Approach.</em> John Wiley &amp; Sons.
+            <span class="ref-note">CLV hesaplama yöntemleri ve RFM (Recency, Frequency, Monetary) modeline dayalı segmentasyon standartları.</span>
+          </li>
+          <li>
+            Blattberg, R., &amp; Deighton, J. (1996). <em>Manage Marketing by the Customer Equity Test.</em> Harvard Business Review.
+            <span class="ref-note">Müşteri edinme ve elde tutma harcamaları arasındaki optimum dengeyi araştırır. AARRR'ın finansal mantığına teorik temel sağlar.</span>
+          </li>
+        </ul>
+      </div>
+
+      <div class="ref-category">
+        <h3>📖 Framework Kaynakları</h3>
+        <ul class="ref-list">
+          <li>
+            McClure, D. (2007). <em>Startup Metrics for Pirates: AARRR!</em> 500 Startups Blog.
+            <span class="ref-note">AARRR modelinin orijinal sunumu ve tanımlaması. Dave McClure tarafından 500 Startups bünyesinde oluşturuldu.</span>
+          </li>
+          <li>
+            Kaushik, A. (2010). <em>Web Analytics 2.0: The Art of Online Accountability and Science of Customer Centricity.</em> Wiley.
+            <span class="ref-note">DMMP (Digital Marketing Measurement Model) çerçevesinin detaylı açıklandığı temel kitap. Kaushik'in "Occam's Razor" blogu ile birlikte okunmalı.</span>
+          </li>
+          <li>
+            Ellis, S., &amp; Brown, M. (2017). <em>Hacking Growth: How Today's Fastest-Growing Companies Drive Breakout Success.</em> Crown Business.
+            <span class="ref-note">Growth Hacking kavramını sistematize eden, Dropbox ve Airbnb büyüme süreçlerini vaka bazlı anlatan temel kaynak.</span>
+          </li>
+          <li>
+            Walsh, M. (2013). <em>Digital Marketing Measurement Framework.</em>
+            <span class="ref-note">Pazarlama başarısızlıklarının %90'ının amacın net belirlenmemesinden kaynaklandığını ortaya koyan çalışma. DMMP uygulamaları için temel referans.</span>
+          </li>
+        </ul>
+      </div>
+
+      <div class="ref-category">
+        <h3>📊 Endüstri Raporları</h3>
+        <ul class="ref-list">
+          <li>
+            SaaS Capital. (2024). <em>Annual SaaS Metrics Benchmarks.</em>
+            <span class="ref-note">Büyüme aşamasına ve ACV segmentine göre churn, CAC payback ve NRR benchmark'ları. En güvenilir SaaS endüstri kaynağı.</span>
+          </li>
+          <li>
+            OpenView Partners. (2024). <em>Product Benchmarks Report.</em>
+            <span class="ref-note">PLG şirketleri için NRR, CAC ve LTV:CAC oranı benchmark'ları. Product-Led Growth verilerinin en kapsamlı kaynağı.</span>
+          </li>
+          <li>
+            Nielsen. (2021). <em>Global Trust in Advertising.</em>
+            <span class="ref-note">Tüketicilerin %84'ünün aile ve arkadaş önerilerine güvendiği bulgusu. Referral stratejilerinin güçlü istatistiksel dayanağı.</span>
+          </li>
+          <li>
+            Bessemer Venture Partners. (2024). <em>State of the Cloud Report.</em>
+            <span class="ref-note">Rule of 40, ARR büyüme ve kârlılık dengesinin endüstri standartları. Snowflake, Datadog gibi şirketlerin gerçek verileri.</span>
+          </li>
+          <li>
+            Bain &amp; Company / Reichheld. (2001). <em>Prescription for Cutting Costs.</em>
+            <span class="ref-note">Müşteri elde tutmanın finansal etkisi üzerine kapsamlı analiz. "Retention artışı = kâr artışı" bağlantısının iş dünyasındaki kanıtı.</span>
+          </li>
+        </ul>
+      </div>
+
+      <div class="ref-category">
+        <h3>🔧 Araçlar &amp; Platformlar</h3>
+        <ul class="ref-list">
+          <li><strong>Mixpanel</strong> — Ürün analitik, AARRR funnel ve cohort analizi</li>
+          <li><strong>Amplitude</strong> — Davranış takibi, cohort ve retention analizi</li>
+          <li><strong>Google Analytics 4</strong> — Web/uygulama davranış analizi, DMMP entegrasyonu</li>
+          <li><strong>ChartMogul / Baremetrics</strong> — SaaS MRR, churn, LTV metrikleri</li>
+          <li><strong>Gainsight / Totango</strong> — Customer Success, health score, NRR yönetimi</li>
+          <li><strong>Optimizely / VWO</strong> — A/B testi ve multivariate test platformları</li>
+          <li><strong>Segment (Twilio)</strong> — Customer Data Platform, tüm araçlara veri köprüsü</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="final-quote">
+      <blockquote>
+        "The best growth strategy is not the one that brings the most customers — it is the one that brings the right customers and keeps them."
+      </blockquote>
+      <cite>— Growth Hacking prensibinin özeti</cite>
+      <p class="final-note">
+        Bu rehberde yer alan her framework, formül ve strateji gerçek büyüme deneyimlerinden
+        ve bilimsel araştırmalardan damıtılmıştır. Veri toplamak değil, doğru soruları sormak;
+        metrik üretmek değil, kararları iyileştirmek asıl hedeftir.
+      </p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-inner">
+    <span>Growth Hacking &amp; Dijital Pazarlama Rehberi · 2025</span>
+    <span>AARRR · DMMP · Cohort Analizi · Metrik Rehberi</span>
+    <a href="https://github.com/Omerfiratgozutok/growth_hacking" target="_blank" rel="noopener">GitHub →</a>
+  </div>
+</footer>
+
+</main>
+<script src="script.js"></script>
+</body>
+</html>
