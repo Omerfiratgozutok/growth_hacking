@@ -119,12 +119,12 @@ new Chart(document.getElementById('dmmpHierarchyChart'), {
 new Chart(document.getElementById('funnelChart'), {
   type: 'bar',
   data: {
-    labels: ['Acquisition\n(Visit→Lead)', 'Activation\n(Lead→Active)', 'Revenue\n(Active→Paid)', 'Retention\n(Ay 2)', 'Referral\n(NPS→Davet)'],
+    labels: ['Acquisition\n(Visit→Lead)', 'Activation\n(Lead→Active)', 'Retention\n(Ay 2)', 'Referral\n(NPS→Davet)', 'Revenue\n(Active→Paid)'],
     datasets: [{
       label: 'Dönüşüm Oranı (%)',
-      data: [22, 45, 15, 65, 30],
-      backgroundColor: [C.acqBg, C.actBg, C.revBg, C.retBg, C.refBg],
-      borderColor:     [C.acq,   C.act,   C.rev,   C.ret,   C.ref],
+      data: [22, 45, 65, 30, 15],
+      backgroundColor: [C.acqBg, C.actBg, C.retBg, C.refBg, C.revBg],
+      borderColor:     [C.acq,   C.act,   C.ret,   C.ref,   C.rev],
       borderWidth: 2, borderRadius: 6,
     }]
   },
