@@ -26,9 +26,9 @@
     <li><a href="#aarrr"         class="nav-item" data-section="aarrr">04 — AARRR Framework</a></li>
     <li><a href="#acquisition"   class="nav-item sub" data-section="acquisition">↳ Acquisition</a></li>
     <li><a href="#activation"    class="nav-item sub" data-section="activation">↳ Activation</a></li>
-    <li><a href="#revenue"       class="nav-item sub" data-section="revenue">↳ Revenue</a></li>
     <li><a href="#retention"     class="nav-item sub" data-section="retention">↳ Retention</a></li>
     <li><a href="#referral"      class="nav-item sub" data-section="referral">↳ Referral</a></li>
+    <li><a href="#revenue"       class="nav-item sub" data-section="revenue">↳ Revenue</a></li>
     <li><a href="#cohort"        class="nav-item" data-section="cohort">05 — Cohort Analizi</a></li>
     <li><a href="#metrics"       class="nav-item" data-section="metrics">06 — Temel Metrikler</a></li>
     <li><a href="#ltv-cac"       class="nav-item sub" data-section="ltv-cac">↳ LTV / CAC</a></li>
@@ -474,10 +474,6 @@
         <div class="funnel-label"><span class="funnel-letter">A</span><div><strong>Activation</strong><small>Etkileşim</small></div></div>
         <div class="funnel-metric">Lead → Aktif Kullanıcı</div>
       </div>
-      <div class="funnel-step rev">
-        <div class="funnel-label"><span class="funnel-letter">R</span><div><strong>Revenue</strong><small>Gelir</small></div></div>
-        <div class="funnel-metric">Aktif → Ödeme Yapan</div>
-      </div>
       <div class="funnel-step ret">
         <div class="funnel-label"><span class="funnel-letter">R</span><div><strong>Retention</strong><small>Bağlılık</small></div></div>
         <div class="funnel-metric">Tekrar Kullanım</div>
@@ -485,6 +481,10 @@
       <div class="funnel-step ref-step">
         <div class="funnel-label"><span class="funnel-letter">R</span><div><strong>Referral</strong><small>Tavsiye</small></div></div>
         <div class="funnel-metric">NPS → Yeni Kullanıcı</div>
+      </div>
+      <div class="funnel-step rev">
+        <div class="funnel-label"><span class="funnel-letter">R</span><div><strong>Revenue</strong><small>Gelir</small></div></div>
+        <div class="funnel-metric">Aktif → Ödeme Yapan</div>
       </div>
     </div>
 
@@ -638,63 +638,10 @@
   </div>
 </section>
 
-<!-- REVENUE -->
-<section id="revenue" class="section">
-  <div class="section-inner">
-    <div class="section-label">AARRR — 3/5</div>
-    <h2 class="section-title">Revenue <span class="badge-inline rev">Gelir</span></h2>
-    <p class="section-desc">
-      Neredeyse tüm girişimler için belki de en kritik aşama. Ancak Revenue'ya ulaşmak için
-      diğer 4 aşamayı doğru kurgulamak şarttır. Aceleci tavırlarla gelire odaklanmak mutsuz
-      müşterilere ve kısa sürede başarısızlığa yol açar.
-    </p>
-
-    <div class="info-box success">
-      <strong>En Önemli Gelir Metriği: Customer Lifetime Value (CLV/LTV)</strong><br/>
-      Müşterinizin hayatı boyunca sizin için yaratacağı değer, gelirlerinizi artırmak için
-      odaklanmanız gereken birincil metriktir. LTV düşükse hiçbir CAC sürdürülebilir olmaz.
-    </div>
-
-    <h3 class="sub-title">Temel Gelir Modelleri</h3>
-    <div class="table-wrap">
-      <table>
-        <thead><tr><th>Model</th><th>Yapı</th><th>En İyi Senaryo</th><th>Kritik Metrik</th></tr></thead>
-        <tbody>
-          <tr><td><strong>Freemium</strong></td><td>Ücretsiz temel + ücretli özellikler</td><td>Yüksek hacimli B2C / PLG SaaS</td><td>Free→Paid CVR (%2-5)</td></tr>
-          <tr><td><strong>Free Trial</strong></td><td>14-30 gün deneme, sonra ücretli</td><td>B2B SaaS, orta-karmaşık ürün</td><td>Trial Activation Rate</td></tr>
-          <tr><td><strong>Subscription</strong></td><td>Aylık / yıllık abonelik</td><td>Tüm SaaS modeller</td><td>MRR, Churn Rate</td></tr>
-          <tr><td><strong>Usage-Based</strong></td><td>Kullanıma göre ödeme</td><td>API, altyapı (Stripe, Twilio, AWS)</td><td>Usage Growth, NRR</td></tr>
-          <tr><td><strong>Enterprise / Contract</strong></td><td>Yıllık sözleşme, müzakere</td><td>Büyük B2B hesaplar</td><td>ACV, Logo Retention</td></tr>
-        </tbody>
-      </table>
-    </div>
-
-    <h3 class="sub-title">Geliri Artırmanın 4 Kolu</h3>
-    <div class="grid-2">
-      <div class="card card-rev">
-        <h4>📈 Yeni Müşteri Kazanımı</h4>
-        <p>Acquisition kanallarını optimize ederek daha düşük CAC ile daha fazla müşteri edinmek. En pahalı büyüme yolu ama temel gereklilik.</p>
-      </div>
-      <div class="card card-rev">
-        <h4>⬆️ Upsell / Expansion</h4>
-        <p>Mevcut müşteriyi üst pakete taşımak veya kullanım artışını sağlamak. CAC = 0. Net Revenue Retention'ı %100 üzerine taşımanın yolu.</p>
-      </div>
-      <div class="card card-rev">
-        <h4>🔁 Churn'ü Azaltmak</h4>
-        <p>Kaybettiğiniz müşterilerin gelirine değil, kazandığınız müşterilerin gelirine odaklanın. Retention'ı %5 artırmak kârı %25-95 artırır. <em>(Reichheld &amp; Sasser, HBR 1990)</em></p>
-      </div>
-      <div class="card card-rev">
-        <h4>💲 Fiyatlandırma Optimizasyonu</h4>
-        <p>Freemium, paket servisler, yıllık ödeme indirimi. Demo sürümlerini iyileştirmek ya da ücretsiz katman sunmak müşteri tabanını genişletir.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
 <!-- RETENTION -->
 <section id="retention" class="section">
   <div class="section-inner">
-    <div class="section-label">AARRR — 4/5</div>
+    <div class="section-label">AARRR — 3/5</div>
     <h2 class="section-title">Retention <span class="badge-inline ret">Bağlılık</span></h2>
     <p class="section-desc">
       Ürün/hizmetinizin türüne göre gözlemlediğiniz veriler ve zaman aralıkları değişebilir.
@@ -770,7 +717,7 @@
 <!-- REFERRAL -->
 <section id="referral" class="section">
   <div class="section-inner">
-    <div class="section-label">AARRR — 5/5</div>
+    <div class="section-label">AARRR — 4/5</div>
     <h2 class="section-title">Referral <span class="badge-inline ref-badge">Tavsiye</span></h2>
     <p class="section-desc">
       Word-of-mouth (ağızdan ağıza pazarlama) hiçbir zaman etkisini yitirmedi. Ürün/hizmetinizden
@@ -823,8 +770,61 @@
         </div>
       </div>
     </div>
+  </div>
+</section>
 
-    <!-- SaaS Example -->
+<!-- REVENUE -->
+<section id="revenue" class="section">
+  <div class="section-inner">
+    <div class="section-label">AARRR — 5/5</div>
+    <h2 class="section-title">Revenue <span class="badge-inline rev">Gelir</span></h2>
+    <p class="section-desc">
+      Neredeyse tüm girişimler için belki de en kritik aşama. Ancak Revenue'ya ulaşmak için
+      diğer 4 aşamayı doğru kurgulamak şarttır. Aceleci tavırlarla gelire odaklanmak mutsuz
+      müşterilere ve kısa sürede başarısızlığa yol açar.
+    </p>
+
+    <div class="info-box success">
+      <strong>En Önemli Gelir Metriği: Customer Lifetime Value (CLV/LTV)</strong><br/>
+      Müşterinizin hayatı boyunca sizin için yaratacağı değer, gelirlerinizi artırmak için
+      odaklanmanız gereken birincil metriktir. LTV düşükse hiçbir CAC sürdürülebilir olmaz.
+    </div>
+
+    <h3 class="sub-title">Temel Gelir Modelleri</h3>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>Model</th><th>Yapı</th><th>En İyi Senaryo</th><th>Kritik Metrik</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Freemium</strong></td><td>Ücretsiz temel + ücretli özellikler</td><td>Yüksek hacimli B2C / PLG SaaS</td><td>Free→Paid CVR (%2-5)</td></tr>
+          <tr><td><strong>Free Trial</strong></td><td>14-30 gün deneme, sonra ücretli</td><td>B2B SaaS, orta-karmaşık ürün</td><td>Trial Activation Rate</td></tr>
+          <tr><td><strong>Subscription</strong></td><td>Aylık / yıllık abonelik</td><td>Tüm SaaS modeller</td><td>MRR, Churn Rate</td></tr>
+          <tr><td><strong>Usage-Based</strong></td><td>Kullanıma göre ödeme</td><td>API, altyapı (Stripe, Twilio, AWS)</td><td>Usage Growth, NRR</td></tr>
+          <tr><td><strong>Enterprise / Contract</strong></td><td>Yıllık sözleşme, müzakere</td><td>Büyük B2B hesaplar</td><td>ACV, Logo Retention</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h3 class="sub-title">Geliri Artırmanın 4 Kolu</h3>
+    <div class="grid-2">
+      <div class="card card-rev">
+        <h4>📈 Yeni Müşteri Kazanımı</h4>
+        <p>Acquisition kanallarını optimize ederek daha düşük CAC ile daha fazla müşteri edinmek. En pahalı büyüme yolu ama temel gereklilik.</p>
+      </div>
+      <div class="card card-rev">
+        <h4>⬆️ Upsell / Expansion</h4>
+        <p>Mevcut müşteriyi üst pakete taşımak veya kullanım artışını sağlamak. CAC = 0. Net Revenue Retention'ı %100 üzerine taşımanın yolu.</p>
+      </div>
+      <div class="card card-rev">
+        <h4>🔁 Churn'ü Azaltmak</h4>
+        <p>Kaybettiğiniz müşterilerin gelirine değil, kazandığınız müşterilerin gelirine odaklanın. Retention'ı %5 artırmak kârı %25-95 artırır. <em>(Reichheld &amp; Sasser, HBR 1990)</em></p>
+      </div>
+      <div class="card card-rev">
+        <h4>💲 Fiyatlandırma Optimizasyonu</h4>
+        <p>Freemium, paket servisler, yıllık ödeme indirimi. Demo sürümlerini iyileştirmek ya da ücretsiz katman sunmak müşteri tabanını genişletir.</p>
+      </div>
+    </div>
+
+    <!-- SaaS Uçtan Uca Örnek — doğru AARRR sırası: A-A-R-R-R -->
     <div class="saas-example">
       <h3>SaaS için Uçtan Uca AARRR Örneği</h3>
       <div class="saas-flow">
@@ -832,11 +832,11 @@
         <div class="sf-arrow">↓</div>
         <div class="sf-step act"><div class="sf-label">Activation</div><div class="sf-desc">Ürün kaydını tamamlaması ve ilk formunu oluşturması</div></div>
         <div class="sf-arrow">↓</div>
-        <div class="sf-step rev"><div class="sf-label">Revenue</div><div class="sf-desc">İhtiyaçların artması → Pro paketi satın alması</div></div>
-        <div class="sf-arrow">↓</div>
         <div class="sf-step ret"><div class="sf-label">Retention</div><div class="sf-desc">Tüm belgelerini platforma aktarması ve form oluşturmaya devam etmesi</div></div>
         <div class="sf-arrow">↓</div>
         <div class="sf-step ref-sf"><div class="sf-label">Referral</div><div class="sf-desc">Dosya paylaşımlarını platform linki üzerinden yapması, arkadaşlarına tavsiye etmesi</div></div>
+        <div class="sf-arrow">↓</div>
+        <div class="sf-step rev"><div class="sf-label">Revenue</div><div class="sf-desc">İhtiyaçların artması → Pro paketi satın alması</div></div>
       </div>
     </div>
   </div>
