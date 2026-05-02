@@ -193,24 +193,65 @@ body { font-family: var(--font); background: var(--bg); color: var(--text); line
 .mk-arrow { display: flex; align-items: center; padding: 0 16px; color: var(--text3); font-size: 22px; border-left: 1px solid var(--border); border-right: 1px solid var(--border); }
 
 /* ─── FUNNEL ────────────────────────────────────────── */
-.funnel-container { display: flex; flex-direction: column; gap: 4px; margin: 36px 0; max-width: 720px; }
-.funnel-step { display: flex; align-items: center; justify-content: space-between; padding: 14px 22px; border-radius: var(--radius-sm); transition: transform 0.2s; }
-.funnel-step:hover { transform: translateX(4px); }
-.funnel-step.acq { background: rgba(79,142,247,0.12); border: 1px solid rgba(79,142,247,0.3); clip-path: polygon(0 0, 100% 0, 96% 100%, 4% 100%); }
-.funnel-step.act { background: rgba(167,139,250,0.12); border: 1px solid rgba(167,139,250,0.3); clip-path: polygon(4% 0, 96% 0, 92% 100%, 8% 100%); }
-.funnel-step.rev { background: rgba(34,197,94,0.12); border: 1px solid rgba(34,197,94,0.3); clip-path: polygon(8% 0, 92% 0, 88% 100%, 12% 100%); }
-.funnel-step.ret { background: rgba(245,158,11,0.12); border: 1px solid rgba(245,158,11,0.3); clip-path: polygon(12% 0, 88% 0, 84% 100%, 16% 100%); }
-.funnel-step.ref-step { background: rgba(244,114,182,0.12); border: 1px solid rgba(244,114,182,0.3); clip-path: polygon(16% 0, 84% 0, 80% 100%, 20% 100%); }
+/*
+ * clip-path hem arka planı hem içeriği (metin, daire) keser.
+ * Bunun yerine her adıma margin-inline ile gerçek huni daralması veriyoruz.
+ * Bu sayede tüm yazılar tam görünür kalır.
+ */
+.funnel-container { display: flex; flex-direction: column; gap: 5px; margin: 36px 0; max-width: 720px; }
+.funnel-step {
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 14px 22px; border-radius: var(--radius-sm);
+  transition: filter 0.2s, box-shadow 0.2s;
+}
+.funnel-step:hover { filter: brightness(1.12); box-shadow: 0 0 0 1px rgba(255,255,255,0.06); }
+
+/* Margin-inline ile her adım biraz daha içeri çekiliyor → huni şekli */
+.funnel-step.acq {
+  background: rgba(79,142,247,0.13);
+  border: 1px solid rgba(79,142,247,0.35);
+  border-left: 3px solid rgba(79,142,247,0.8);
+  margin-inline: 0;
+}
+.funnel-step.act {
+  background: rgba(167,139,250,0.13);
+  border: 1px solid rgba(167,139,250,0.35);
+  border-left: 3px solid rgba(167,139,250,0.8);
+  margin-inline: 4%;
+}
+.funnel-step.rev {
+  background: rgba(34,197,94,0.13);
+  border: 1px solid rgba(34,197,94,0.35);
+  border-left: 3px solid rgba(34,197,94,0.8);
+  margin-inline: 8%;
+}
+.funnel-step.ret {
+  background: rgba(245,158,11,0.13);
+  border: 1px solid rgba(245,158,11,0.35);
+  border-left: 3px solid rgba(245,158,11,0.8);
+  margin-inline: 12%;
+}
+.funnel-step.ref-step {
+  background: rgba(244,114,182,0.13);
+  border: 1px solid rgba(244,114,182,0.35);
+  border-left: 3px solid rgba(244,114,182,0.8);
+  margin-inline: 16%;
+}
+
 .funnel-label { display: flex; align-items: center; gap: 12px; }
-.funnel-letter { width: 34px; height: 34px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 800; font-size: 15px; flex-shrink: 0; }
-.acq .funnel-letter { background: var(--acq); color: #fff; }
-.act .funnel-letter { background: var(--act); color: #fff; }
-.rev .funnel-letter { background: var(--rev); color: #fff; }
-.ret .funnel-letter { background: var(--ret); color: #000; }
+.funnel-letter {
+  width: 36px; height: 36px; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  font-weight: 800; font-size: 15px; flex-shrink: 0;
+}
+.acq .funnel-letter    { background: var(--acq); color: #fff; }
+.act .funnel-letter    { background: var(--act); color: #fff; }
+.rev .funnel-letter    { background: var(--rev); color: #fff; }
+.ret .funnel-letter    { background: var(--ret); color: #000; }
 .ref-step .funnel-letter { background: var(--ref); color: #fff; }
-.funnel-label strong { display: block; font-size: 14px; }
-.funnel-label small { display: block; font-size: 11px; color: var(--text3); }
-.funnel-metric { font-size: 12px; color: var(--text2); font-family: var(--mono); }
+.funnel-label strong { display: block; font-size: 14px; color: var(--text); }
+.funnel-label small  { display: block; font-size: 11px; color: var(--text3); }
+.funnel-metric { font-size: 12px; color: var(--text); font-family: var(--mono); opacity: 0.85; }
 .badge-inline { display: inline-block; padding: 2px 12px; border-radius: 100px; font-size: 14px; font-weight: 600; vertical-align: middle; margin-left: 8px; }
 .badge-inline.acq { background: rgba(79,142,247,0.15); color: var(--acq); }
 .badge-inline.act { background: rgba(167,139,250,0.15); color: var(--act); }
